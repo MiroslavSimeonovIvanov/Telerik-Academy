@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Sample form</title>
+    <style>
+        table, td, th {
+            border-collapse: collapse;
+            border: 1px solid rgb(161, 161, 161);
+        }
+
+        #footer {
+            background-color: rgb(209, 237, 225);
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <table>
+            <tr>
+                <td><strong>Last Name</strong></td>
+                <td><input type="text" name="Last Name" value="Nakov" /></td>
+            </tr>
+            <tr>
+                <td><strong>First Name</strong></td>
+                <td><input type="text" name="First Name" value="Svetlin" /></td>
+            </tr>
+            <tr>
+                <td><strong>Address</strong></td>
+                <td><textarea name="address">17 Hristo Botev Str. floor 3, apt. 12</textarea></td>
+            </tr>
+            <tr>
+                <td><strong>City</strong></td>
+                <td>
+                    <input type="text" name="City" value="Kaspichan" />
+                    <strong>State</strong>
+                    <input type="text" name="State" />
+                </td>
+            </tr>
+            <tr>
+                <td><strong>Zip/Postal Code</strong></td>
+                <td><input type="text" name="Zip/Postal Code" value="9325" /></td>
+            </tr>
+            <tr>
+                <td><strong>Country</strong></td>
+                <td>
+                    <select name="Country">
+                        <option value="Value 1" selected="selected">Bulgaria</option>
+                        <option value="Value 2">USA</option>
+                        <option value="Value 3">UK</option>
+                        <option value="Value 4">India</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><strong>Phone (country code, area code, number)</strong></td>
+                <td>
+                    (+<input type="text" name="Country Code" value="359" />)
+                    <input type="text" name="Area Code" value="88" />-
+                    <input type="text" name="Number" value="8334343" />
+                </td>
+            </tr>
+            <tr>
+                <td><strong>E-mail</strong></td>
+                <td><input type="text" name="E-mail" value="nakov@kaspichan.org" /></td>
+            </tr>
+            <tr>
+                <td><strong>Birth date</strong></td>
+                <td>
+                    Month<input type="text" name="Month" value="06" />
+                    Day<input type="text" name="Day" value="14" />
+                    Year (4 digit)<input type="text" name="Year" value="1980" />
+                </td>
+            </tr>
+            <tr>
+                <td><strong>Gender</strong></td>
+                <td>
+                    <select name="Gender">
+                        <option value="Value 1" selected="selected">Male</option>
+                        <option value="Value 2">Female</option>
+                        <option value="Value 3">Other</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><strong>Starting date</strong></td>
+                <td>
+                    <input type="radio" name="Starting date" value="Spring 2006" checked />Spring 2006
+                    <input type="radio" name="Starting date" value="Summer 2006" />Summer 2006
+                </td>
+            </tr>
+            <tr>
+                <td><strong>Comments/Questions</strong></td>
+                <td><textarea name="Comments/Questions" rows="5" cols="35">Please send me more information about the lodging.</textarea></td>
+            </tr>
+            <tr id="footer">
+                <td colspan="2">
+                    <input type="submit" value="Submit" />
+                    <input type="reset" value="Clear This Form" />
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
