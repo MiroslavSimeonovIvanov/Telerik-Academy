@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Online Marketplace</title>
+    <style>
+        body, table, thead, tbody, tr, td, p {
+            font-family: 'Myriad Hebrew';
+        }
+
+        #NestedTable {
+            border: 2px solid;
+            border-collapse: collapse;
+            border-color: darkgray;
+        }
+
+        #NestedCell {
+            padding: 5px;
+        }
+
+        thead {
+            text-align: center;
+        }
+
+        #Sidebar {
+            padding-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <td>
+                    <a href="http://www.apple.com/">Apple</a>
+                    <a href="http://www.toshiba.com/tai/">Toshiba</a>
+                    <a href="http://www.lenovo.com/us/en/">Lenovo</a>
+                    <a href="http://www.dell.com/">Dell</a>
+                    <a href="http://www.asus.com/bg/">Asus</a>
+                    <a href="http://us.acer.com/ac/en/US/content/home">Acer</a>
+                    <a href="http://www.hp.com/country/us/en/uc/welcome.html">HP</a>
+                </td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <table id="NestedTable">
+                        <tr>
+                            <td id="NestedCell">
+                                <fieldset>
+                                    <legend>Apple MacBook Air</legend>
+                                    <img src="http://www.macrepairleeds.co.uk/wp-content/uploads/2013/01/macbook-air.png" width="150" height="96" />
+                                    <p>
+                                        64GB SSD <br />
+                                        2GB DDR <br />
+                                        Intel Core i5 1300 USD
+                                    </p>
+                                </fieldset>
+                            </td>
+                            <td id="NestedCell">
+                                <fieldset>
+                                    <legend>Apple MacBook Air</legend>
+                                    <img src="http://www.macrepairleeds.co.uk/wp-content/uploads/2013/01/macbook-air.png" width="150" height="96" />
+                                    <p>
+                                        64GB SSD <br />
+                                        2GB DDR <br />
+                                        Intel Core i5 1300 USD
+                                    </p>
+                                </fieldset>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="NestedCell">
+                                <fieldset>
+                                    <legend>Apple MacBook Air</legend>
+                                    <img src="http://www.macrepairleeds.co.uk/wp-content/uploads/2013/01/macbook-air.png" width="150" height="96" />
+                                    <p>
+                                        64GB SSD <br />
+                                        2GB DDR <br />
+                                        Intel Core i5 1300 USD
+                                    </p>
+                                </fieldset>
+                            </td>
+                            <td id="NestedCell">
+                                <fieldset>
+                                    <legend>Apple MacBook Air</legend>
+                                    <img src="http://www.macrepairleeds.co.uk/wp-content/uploads/2013/01/macbook-air.png" width="150" height="96" />
+                                    <p>
+                                        64GB SSD <br />
+                                        2GB DDR <br />
+                                        Intel Core i5 1300 USD
+                                    </p>
+                                </fieldset>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="NestedCell">
+                                <fieldset>
+                                    <legend>Apple MacBook Air</legend>
+                                    <img src="http://www.macrepairleeds.co.uk/wp-content/uploads/2013/01/macbook-air.png" width="150" height="96" />
+                                    <p>
+                                        64GB SSD <br />
+                                        2GB DDR <br />
+                                        Intel Core i5 1300 USD
+                                    </p>
+                                </fieldset>
+                            </td>
+                            <td id="NestedCell">
+                                <fieldset>
+                                    <legend>Apple MacBook Air</legend>
+                                    <img src="http://www.macrepairleeds.co.uk/wp-content/uploads/2013/01/macbook-air.png" width="150" height="96" />
+                                    <p>
+                                        64GB SSD <br />
+                                        2GB DDR <br />
+                                        Intel Core i5 1300 USD
+                                    </p>
+                                </fieldset>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td id="Sidebar">
+                    <p>Min price: 500 USD</p>
+                    <input type="range" max="500" />
+                    <p>Max price: 1500 USD</p>
+                    <input type="range" max="1500" />
+                    <p>Min RAM: 4GB</p>
+                    <input type="range" min="4" />
+                    <p>Max RAM: 16GB</p>
+                    <input type="range" max="16" />
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
