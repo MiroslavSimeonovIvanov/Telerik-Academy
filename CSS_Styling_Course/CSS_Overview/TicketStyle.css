@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #595959;
+}
+
+dt {
+    font-style: italic;
+    color: #FFFFFF;
+}
+
+.silverFont {
+    color: #BCC3C4;
+}
+
+.yellowFont {
+    color: #DCCA7F;
+}
+
+#dot {
+    background: #71B47A;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    float: left;
+}
+
+#orangeFont {
+    font-weight: bold;
+    color: #DE6A24;
+}
+
+#redFont {
+    font-weight: bold;
+    color: #F00501;
+}
