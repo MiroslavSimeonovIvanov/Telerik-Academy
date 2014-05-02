@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Windows calculator in Programmer view</title>
+    <link href="Styles/CalculatorStyle.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="wrapper">
+        <span>
+            <img src="Images/MiniCalculator.png" alt="Mini calculator icon" />
+            Calculator
+        </span>
+        <img class="buttons" src="Images/Buttons.png" alt="Buttons" />
+
+        <div id="outerBorder">
+            <div id="innerBorder">
+                <div id="menu">
+                    <ul>
+                        <li>View</li>
+                        <li>Edit</li>
+                        <li>Help</li>
+                    </ul>
+                </div>
+
+                <div id="calculatorDisplayOuterBorder">
+                    <div id="calculatorDisplayInnerBorder">
+                        <p>
+                            8854455
+                        </p>
+                    </div>
+                </div>
+
+                <div id="bitsDisplayOuterBorder">
+                    <div id="bitsDisplayInnerBorder">
+                        <div id="bits">
+                            <ul>
+                                <li>0000</li>
+                                <li>0000</li>
+                                <li>0000</li>
+                                <li>0000</li>
+                                <li>0000</li>
+                                <li>0000</li>
+                                <li>0000</li>
+                                <li>0000</li>
+                            </ul>
+                            <ul class="positions">
+                                <li class="bit-1">63</li>
+                                <li class="bit-2">47</li>
+                                <li id="bit-3_1">32</li>
+                            </ul>
+                            <ul>
+                                <li>0000</li>
+                                <li>0000</li>
+                                <li>1000</li>
+                                <li>0111</li>
+                                <li>0001</li>
+                                <li>1011</li>
+                                <li>1011</li>
+                                <li>0111</li>
+                            </ul>
+                            <ul class="positions">
+                                <li class="bit-1">31</li>
+                                <li class="bit-2">15</li>
+                                <li id="bit-3_2">0</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="radioButtonContainer">
+                    <div id="numberSystems">
+                        <ul>
+                            <li>Hex</li>
+                            <li class="activeButton">Dec</li>
+                            <li>Oct</li>
+                            <li>Bin</li>
+                        </ul>
+                    </div>
+
+                    <div id="groupOfDigits">
+                        <ul>
+                            <li class="activeButton">Qword</li>
+                            <li>Dword</li>
+                            <li>Word</li>
+                            <li>Byte</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="buttonsContainer">
+                    <ul>
+                        <li>
+                            <input type="button" class="disabledButtons" value="" />
+                            <input type="button" class="activeButtons" value="Mod" />
+                            <input type="button" class="disabledButtons" id="buttonA" value="A" disabled />
+                            <input type="button" class="disabledButtons" id="buttonMC" value="MC" disabled />
+                            <input type="button" class="disabledButtons" id="buttonMR" value="MR" disabled />
+                            <input type="button" class="disabledButtons" id="buttonMS" value="MS" disabled />
+                            <input type="button" class="disabledButtons" id="buttonMPlus" value="M+" disabled />
+                            <input type="button" class="disabledButtons" id="buttonMMinus" value="M-" disabled />
+                        </li>
+                        <li>
+                            <input type="button" class="activeButtons" id="firstParenthesis" value="(" />
+                            <input type="button" class="activeButtons" id="secondParenthesis" value=")" />
+                            <input type="button" class="disabledButtons" id="buttonB" value="B" />
+                            <input type="button" class="activeButtons" id="arrow" value="&larr;" />
+                            <input type="button" class="activeButtons" id="buttonCE" value="CE" />
+                            <input type="button" class="activeButtons" id="buttonC" value="C" />
+                            <input type="button" class="activeButtons" id="buttonPlusMinus" value="&plusmn;" />
+                            <input type="button" class="disabledButtons" id="buttonSquareRoot" value="&radic;" />
+                        </li>
+                        <li>
+                            <input type="button" class="activeButtons" id="buttonRoL" value="RoL" />
+                            <input type="button" class="activeButtons" id="buttonRoR" value="RoR" />
+                            <input type="button" class="disabledButtons" id="secondButtonC" value="C" />
+                            <input type="button" class="activeButtons" id="button7" value="7" />
+                            <input type="button" class="activeButtons" id="button8" value="8" />
+                            <input type="button" class="activeButtons" id="button9" value="9" />
+                            <input type="button" class="activeButtons" id="buttonSlash" value="/" />
+                            <input type="button" class="disabledButtons" id="buttonPercent" value="%" />
+                        </li>
+                        <li>
+                            <input type="button" class="activeButtons" id="buttonOr" value="Or" />
+                            <input type="button" class="activeButtons" id="buttonXor" value="Xor" />
+                            <input type="button" class="disabledButtons" id="buttonD" value="D" />
+                            <input type="button" class="activeButtons" id="button4" value="4" />
+                            <input type="button" class="activeButtons" id="button5" value="5" />
+                            <input type="button" class="activeButtons" id="button6" value="6" />
+                            <input type="button" class="activeButtons" id="buttonStar" value="*" />
+                            <input type="button" class="disabledButtons" id="button1X" value="1/x" />
+                        </li>
+                        <li>
+                            <input type="button" class="activeButtons" id="buttonLsh" value="Lsh" />
+                            <input type="button" class="activeButtons" id="buttonRsh" value="Rsh" />
+                            <input type="button" class="disabledButtons" id="buttonE" value="E" />
+                            <input type="button" class="activeButtons" id="button1" value="1" />
+                            <input type="button" class="activeButtons" id="button2" value="2" />
+                            <input type="button" class="activeButtons" id="button3" value="3" />
+                            <input type="button" class="activeButtons" id="buttonMinus" value="-" />
+                            <input type="button" class="activeButtons" id="buttonEqual" value="=" />
+                        </li>
+                        <li>
+                            <input type="button" class="activeButtons" id="buttonNot" value="Not" />
+                            <input type="button" class="activeButtons" id="buttonAnd" value="And" />
+                            <input type="button" class="disabledButtons" id="buttonF" value="F" />
+                            <input type="button" class="activeButtons" id="button0" value="0" />
+                            <input type="button" class="disabledButtons" id="buttonDot" value="." />
+                            <input type="button" class="activeButtons" id="buttonPlus" value="+" />
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
