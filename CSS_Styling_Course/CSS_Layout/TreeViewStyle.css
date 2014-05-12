@@ -1,0 +1,16 @@
+nav ul {
+    list-style: none;
+}
+
+    nav ul li ul {
+        display: none;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    nav ul li:hover ul {
+        display: block;
+        opacity: 1;
+        visibility: visible;
+        color: #888888;
+    }
