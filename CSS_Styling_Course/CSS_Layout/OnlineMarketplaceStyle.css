@@ -1,0 +1,85 @@
+a, body, div, p {
+    font-family: 'Myriad Hebrew';
+}
+
+aside {
+    float: left;
+    font-size: 26px;
+    text-align: center;
+    padding: 60px 0px 0px 60px;
+}
+
+body {
+    width: 1075px;
+    height: 664px;
+    border: 2px solid #3E3E3E;
+    border-radius: 10px;
+}
+
+hr {
+    width: 95%;
+    border: 1px solid #3E3E3E;
+}
+
+nav ul {
+    text-align: center;
+    margin: 16px 0px 0px 0px;
+}
+
+    nav ul li {
+        list-style: none;
+        display: inline;
+        font-weight: bold;
+    }
+
+        nav ul li a {
+            color: #06AFF0;
+            font-size: 25px;
+            padding-right: 2px;
+        }
+
+#wrapper {
+    width: 695px;
+    height: 573px;
+    float: left;
+    border: 2px solid #3E3E3E;
+    margin: 7px 0px 0px 15px;
+}
+
+    #wrapper .row {
+        display: table-row;
+    }
+
+    #wrapper .cell {
+        display: table-cell;
+        padding: 7px 0px 0px 10px;
+    }
+
+    #wrapper .row .cell fieldset {
+        width: 300px;
+        border: 2px solid #3E3E3E;
+    }
+
+        #wrapper .row .cell fieldset legend {
+            text-align: center;
+            font-size: 21px;
+            padding: 0px 10px 0px 10px;
+        }
+
+        #wrapper .row .cell fieldset img {
+            width: 150px;
+            height: 96px;
+            float: left;
+        }
+
+        #wrapper .row .cell fieldset ul {
+            list-style-type: none;
+            padding: 15px 0px 0px 40px;
+            text-align: center;
+            margin-bottom: 0px;
+        }
+
+            #wrapper .row .cell fieldset ul li {
+                font-size: 21px;
+                padding: 10px 0px 0px 0px;
+            }
