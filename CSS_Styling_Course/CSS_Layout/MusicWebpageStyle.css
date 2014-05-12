@@ -1,0 +1,56 @@
+article {
+    width: 396px;
+    border: 1px solid #BBBBBB;
+    background-color: #FFFFFF;
+    margin: 12px 12px 30px 12px;
+}
+
+    article img {
+        float: left;
+        border: 1px solid #B9B8B9;
+        margin: 15px;
+    }
+
+body {
+    font-family: 'Segoe UI';
+    font-size: 14px;
+}
+
+section {
+    width: 421px;
+    background-color: #EEEEEE;
+    border-radius: 6px;
+    position: fixed;
+}
+
+    section h1 {
+        font-weight: normal;
+        margin: 10px 0px 0px 0px;
+        padding: 0px 12px 14px 12px;
+    }
+
+.addButton {
+    color: #FFFFFF;
+    background-image: url(../Images/button.png);
+    border-top: 1px solid #E58384;
+    border-right: 1px solid #650000;
+    border-bottom: 1px solid #650000;
+    border-left: 1px solid #E58384;
+    padding-left: 18px;
+    width: 77px;
+    height: 25px;
+    margin: 0px 0px 10px -1px;
+}
+
+.listenButton {
+    color: #FFFFFF;
+    background-image: url(../Images/button.png);
+    border-top: 1px solid #E58384;
+    border-right: 1px solid #650000;
+    border-bottom: 1px solid #650000;
+    border-left: 1px solid #E58384;
+    padding-left: 18px;
+    width: 77px;
+    height: 25px;
+    margin: 0px 0px 10px 55px;
+}
