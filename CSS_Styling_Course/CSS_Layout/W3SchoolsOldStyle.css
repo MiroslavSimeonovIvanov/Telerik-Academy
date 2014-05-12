@@ -1,0 +1,190 @@
+aside {
+    width: 145px;
+    float: left;
+    margin: 0px 0px 0px 2px;
+}
+
+    aside ul {
+        list-style: none;
+        border: 1px solid #818181;
+        background-color: #FFFFFF;
+        font-family: Verdana;
+        margin: 0px 0px 1px 0px;
+        padding: 0px 0px 0px 0px;
+        text-align: center;
+    }
+
+        aside ul h4 {
+            color: #FFFFFF;
+            background-color: #808080;
+            font-size: 11px;
+            text-align: center;
+            margin: 0px 0px 0px 0px;
+            padding-bottom: 2px;
+        }
+
+        aside ul li {
+            padding: 0px 0px 6px 0px;
+        }
+
+            aside ul li a {
+                color: #8F0808;
+                font-size: 11px;
+            }
+
+body {
+    background-color: #F1F1F1;
+}
+
+hr {
+    width: 98%;
+}
+
+input[type="text"] {
+    width: 94px;
+    border: 1px solid #82a0bb;
+}
+
+nav {
+    width: 140px;
+    float: left;
+}
+
+    nav ul {
+        list-style: none;
+        font-family: Verdana;
+        font-size: 11px;
+        text-shadow: 0px 1px 0px #FFFFFF;
+        padding-left: 2px;
+    }
+
+        nav ul #homeLink {
+            font-family: Consolas;
+            font-weight: bold;
+            font-size: 13px;
+        }
+
+        nav ul .startListItem {
+            color: #8F0808;
+            font-weight: bold;
+        }
+
+section {
+    width: 580px;
+    float: left;
+    border: 1px solid #818181;
+    background-color: #FFFFFF;
+    font-family: Verdana;
+}
+
+    section h1 {
+        font-size: 20px;
+        padding-left: 5px;
+    }
+
+    section hr:last-of-type {
+        margin-bottom: 40px;
+    }
+
+    section article {
+        margin-bottom: 15px;
+    }
+
+        section article:first-of-type {
+            margin-bottom: 30px;
+        }
+
+        section article h4 {
+            color: #FFFFFF;
+            background-color: #808080;
+            margin: 0px 4px 0px 4px;
+            padding-left: 5px;
+            font-size: 14px;
+        }
+
+        section article img {
+            float: left;
+            padding: 20px 20px 0px 10px;
+        }
+
+        section article:first-of-type {
+            font-weight: bold;
+        }
+
+        section article a {
+            color: #8F0808;
+            font-size: 13px;
+            padding: 0px 0px 1px 5px;
+        }
+
+        section article #uniqueText {
+            padding: 0px 40px 0px 0px;
+        }
+
+        section article #uniqueLink {
+            font-weight: normal;
+            padding-left: 122px;
+        }
+
+        section article p {
+            font-size: 13px;
+            padding: 0px 0px 1px 5px;
+        }
+
+.leftInput[type="button"] {
+    width: 100px;
+    border: 1px solid #000000;
+    background-color: #FFFFFF;
+    font-family: Verdana;
+    background-image: url(../Images/PreviousButton.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    margin-left: 5px;
+    font-size: 11px;
+    padding: 3px 6px 3px 6px;
+}
+
+.rightInput[type="button"] {
+    width: 100px;
+    border: 1px solid #000000;
+    background-color: #FFFFFF;
+    font-family: Verdana;
+    background-image: url(../Images/NextButton.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    font-size: 11px;
+    padding: 3px 6px 3px 6px;
+}
+
+#dynamicButton[type="button"] {
+    width: 100px;
+    height: 29px;
+    color: #0abfff;
+    font-weight: bold;
+    border: 1px solid #6298c0;
+    margin: 3px 0px 0px 0px;
+    background: #ffffff; /* Old browsers */
+    background: -moz-linear-gradient(top, #ffffff 0%, #daf2ff 3%, #c0e6fa 50%, #c4e8fa 97%, #ddf4ff 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(3%,#daf2ff), color-stop(50%,#c0e6fa), color-stop(97%,#c4e8fa), color-stop(100%,#ddf4ff)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #ffffff 0%,#daf2ff 3%,#c0e6fa 50%,#c4e8fa 97%,#ddf4ff 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #ffffff 0%,#daf2ff 3%,#c0e6fa 50%,#c4e8fa 97%,#ddf4ff 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #ffffff 0%,#daf2ff 3%,#c0e6fa 50%,#c4e8fa 97%,#ddf4ff 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #ffffff 0%,#daf2ff 3%,#c0e6fa 50%,#c4e8fa 97%,#ddf4ff 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ddf4ff',GradientType=0 ); /* IE6-9 */
+}
+
+#searchButton[type="button"] {
+    width: 18px;
+    border: 1px solid #084379;
+    border-radius: 2px;
+    font-weight: bold;
+    background: #ffffff; /* Old browsers */
+    background: -moz-linear-gradient(top, #ffffff 0%, #f3f3ef 40%, #e2ded4 80%, #bbbcb9 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(40%,#f3f3ef), color-stop(80%,#e2ded4), color-stop(100%,#bbbcb9)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #ffffff 0%,#f3f3ef 40%,#e2ded4 80%,#bbbcb9 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #ffffff 0%,#f3f3ef 40%,#e2ded4 80%,#bbbcb9 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #ffffff 0%,#f3f3ef 40%,#e2ded4 80%,#bbbcb9 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #ffffff 0%,#f3f3ef 40%,#e2ded4 80%,#bbbcb9 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#bbbcb9',GradientType=0 ); /* IE6-9 */
+    padding: 0px 0px 0px 1px;
+}
