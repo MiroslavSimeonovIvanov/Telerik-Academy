@@ -1,0 +1,36 @@
+body {
+
+    div {
+        form {
+            input[type="radio"] {
+                display: none;
+            }
+
+            nav {
+                ul li {
+                    list-style-type: none;
+                    float: left;
+                    display: inline-block;
+                    padding-right: 5px;
+
+                    .smallImage {
+                        width: 160px;
+                        height: 130px;
+                    }
+                }
+            }
+
+            .bigImage {
+
+                .image {
+                    display: none;
+                }
+
+                input:checked + .image {
+                    display: block;
+                    float: left;
+                }
+            }
+        }
+    }
+}
