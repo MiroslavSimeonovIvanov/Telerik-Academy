@@ -1,0 +1,18 @@
+body button {
+    width: 192px;
+    height: 47px;
+    background-image: url(../Images/button.png);
+    border: 0px;
+    border-radius: 30px;
+    font: 22px Calibri bold;
+    text-align: center;
+    padding: 0px 0px 5px 0px;
+}
+
+body a {
+    background-image: url(../Images/button.png);
+    font: 18px Calibri bold;
+    padding: 10px 5px 14px 10px;
+    border-radius: 20px;
+    text-align: center;
+}
