@@ -1,0 +1,240 @@
+@base-font: 12px Verdana;
+@color: #59518c;
+@article-font-color: #4b3e82;
+
+body {
+    width: 900px;
+    margin: 0 auto;
+    font: @base-font;
+
+    header {
+        display: block;
+        height: 63px;
+        background: #ffffff; /* Old browsers */
+        background: -moz-linear-gradient(left, #ffffff 70%, #d2d2e1 70%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, right top, color-stop(70%,#ffffff), color-stop(70%,#d2d2e1)); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(left, #ffffff 70%,#d2d2e1 70%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(left, #ffffff 70%,#d2d2e1 70%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(left, #ffffff 70%,#d2d2e1 70%); /* IE10+ */
+        background: linear-gradient(to right, #ffffff 70%,#d2d2e1 70%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#d2d2e1',GradientType=1 ); /* IE6-9 */
+
+        a {
+            width: 120px;
+            background: @color;
+            text-decoration: none;
+            font: 40px Candara;
+            color: #FFFFFF;
+            padding: 0px 27px 14px 27px;
+        }
+
+        p {
+            text-transform: uppercase;
+            float: right;
+            font: 23px Corbel;
+            color: #5c5a90;
+            text-shadow: -2px 2px 0 #e6efea;
+            margin: 14px 35px 0px 0px;
+
+            img {
+                vertical-align: middle;
+            }
+        }
+    }
+
+    nav {
+        width: 146px;
+        float: left;
+        background-color: #f2f3f7;
+
+        ul {
+            list-style-type: square;
+            padding: 0px 0px 0px 30px;
+
+            .startListItem {
+                font-size: 15px;
+                font-weight: bold;
+                color: #424284;
+                list-style-type: none;
+                margin: 0px 0px 0px -17px;
+            }
+
+            li {
+
+                a {
+                    color: #006699;
+                    text-decoration: none;
+
+                    &:hover {
+                        color: #424284;
+                    }
+                }
+            }
+        }
+    }
+
+    #mainArticles {
+        width: 448px;
+        height: 338px;
+        float: left;
+        border-bottom: 2px solid #e6def5;
+        border-left: 2px solid #e6def5;
+
+        #articleNav {
+            width: 546px;
+            background-color: #e6def5;
+
+            img {
+                padding: 8px;
+                float: left;
+            }
+
+            ul {
+                list-style-type: none;
+                margin: 0px;
+                padding: 0px;
+                display: inline;
+
+                #celebrities {
+                    color: #6d64a3;
+                    font-weight: bold;
+                    padding: 7px 6px 0px 0px;
+                    border-right: none;
+                }
+
+                li {
+                    float: left;
+                    padding: 7px 6px 0px 0px;
+
+                    a {
+                        color: #0000cc;
+                        border-right: 1px solid #0000cc;
+                        padding-right: 7px;
+                    }
+
+                    #lastLink {
+                        border-right: none;
+                    }
+                }
+            }
+        }
+
+        #articleHeading {
+            display: inline;
+            overflow: hidden;
+
+            .imageFrame {
+                margin: 10px;
+                border: 1px solid #000000;
+                float: left;
+            }
+
+            h1 {
+                margin: 0px;
+                padding-top: 55px;
+                font-size: 16px;
+                color: #c41e89;
+            }
+
+            time {
+                color: @article-font-color;
+            }
+
+            h5 {
+                margin: 0px;
+                color: @article-font-color;
+            }
+
+            p {
+                color: @article-font-color;
+                margin: 22px 0px 12px 0px;
+                padding: 0px 0px 0px 10px;
+            }
+
+            a {
+                color: #0000cc;
+                padding-left: 10px;
+                text-decoration: none;
+
+                img {
+                    vertical-align: middle;
+                }
+            }
+        }
+    }
+
+    aside {
+        width: 202px;
+        height: 338px;
+        float: right;
+        border-top: 2px solid #e6def5;
+        border-right: 2px solid #e6def5;
+        border-bottom: 2px solid #e6def5;
+        border-left: 4px solid #e6def5;
+        display: inline;
+        overflow: hidden;
+
+        article {
+            float: left;
+
+            .imageFrame {
+                margin: 10px 10px 0px 10px;
+                border: 1px solid #000000;
+                float: left;
+            }
+
+            p {
+                font-size: 10px;
+                color: @article-font-color;
+            }
+        }
+
+        #asideNav {
+            width: 202px;
+            display: inline-block;
+            background-color: #FFFFFF;
+
+            & > ul {
+                float: left;
+            }
+
+            & > ul:last-of-type {
+                float: right;
+                padding-right: 20px;
+            }
+
+            ul {
+                margin: 0px;
+                padding-top: 10px;
+                padding-left: 10px;
+                list-style-type: none;
+
+                li {
+
+                    a {
+                        color: #0000cc;
+                        text-decoration: none;
+                        font-size: 10px;
+
+                        img {
+                            vertical-align: middle;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    footer {
+        width: 900px;
+        float: left;
+        background: @color;
+        color: #FFFFFF;
+        text-align: center;
+
+        p {
+            margin: 0px;
+            padding: 13px 0px 13px 0px;
+        }
+    }
+}
