@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>HTML5 Input types</title>
+    <script src="scripts/jquery-1.8.2.min.js"></script>
+    <script src="scripts/modernizr-custom.js"></script>
+    <script src="scripts/webshim/polyfiller.js"></script>
+    <script>
+        $.webshims.polyfill('forms');
+    </script>
+</head>
+<body>
+    <form>
+        Mark: <input type="range" name="mark" min="1" max="6" /><br />
+        Number: <input type="number" name="numbers" min="1" max="4" /><br />
+        E-mail: <input type="email" name="email" /><br />
+        Birthday: <input type="date" name="birthday" /><br />
+        Color: <input type="color" name="favourite color" /><br />
+        Birthday (date and time): <input type="datetime" name="birthdaytime" /><br />
+        Birthday (month and year): <input type="month" name="birthdaymonth" /><br />
+        Search Google: <input type="search" name="search" /><br />
+        Telephone: <input type="tel" name="telephone number" /><br />
+        Time: <input type="time" name="time" /><br />
+        Add your favourite website: <input type="url" name="favourite websie" /><br />
+        Select a week: <input type="week" name="week" />
+    </form>
+</body>
+</html>
