@@ -1,0 +1,58 @@
+body {
+    font: 14px sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.menu {
+    padding: 0 10px;
+    border-bottom: 1px solid #cccccc;
+    position: relative;
+}
+
+    .menu:after {
+        content: "";
+        clear: both;
+        display: block;
+    }
+
+    .menu ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+        .menu ul .tabs {
+            float: left;
+            display: inline;
+        }
+
+            .menu ul .tabs #currentTab {
+                border-bottom-color: #ffffff;
+            }
+
+                .menu ul .tabs #currentTab .tabsText {
+                    color: #000000;
+                    background-color: #ffffff;
+                }
+
+            .menu ul .tabs .tabsLink {
+                margin-right: 10px;
+                border: 1px solid #cccccc;
+                display: block;
+                position: relative;
+                bottom: -1px;
+            }
+
+                .menu ul .tabs .tabsLink .tabsText {
+                    color: #888888;
+                    background-color: #f0f0f0;
+                    padding: 2px 10px;
+                    display: block;
+                }
+
+                .menu ul .tabs .tabsLink:hover .tabsText {
+                    background-color: #fafafa;
+                }
