@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Implement MEAN logo with SVG</title>
+</head>
+<body>
+    <svg width="300" height="332" version="1.1" xmlns="http://www.w3.org/2000/svg">
+        <rect width="100%" height="100%" fill="#F4FFE0"></rect>
+
+        <text x="50" y="100" font-family="Franklin Gothic" font-size="30" font-weight="bold" fill="#3D3E36">M</text>
+        <text x="54" y="150" font-family="Franklin Gothic" font-size="30" font-weight="bold" fill="#221E1F">E</text>
+        <text x="54" y="200" font-family="Franklin Gothic" font-size="30" font-weight="bold" fill="#E13336">A</text>
+        <text x="54" y="250" font-family="Franklin Gothic" font-size="30" font-weight="bold" fill="#8CC651">N</text>
+
+        <!-- Here we define the gradient we need for the MongoDB logo and then we draw the circle. -->
+        <circle cx="150" cy="95" r="45" fill="#3D3E36"></circle>
+
+        <defs>
+            <linearGradient id="LinearGradient">
+                <stop stop-color="rgba(17,155,55,1)" offset="0%"></stop>
+                <stop stop-color="rgba(33,160,60,1)" offset="33%"></stop>
+                <stop stop-color="rgba(59,166,68,1)" offset="71%"></stop>
+                <stop stop-color="rgba(73,173,79,1)" offset="100%"></stop>
+            </linearGradient>
+        </defs>
+
+        <path d="M 150 70 Q 125 95 150 120" fill="url(#LinearGradient)" stroke="transparent"></path>
+        <path d="M 150 70 Q 175 95 150 120" fill="#1B8937" stroke="transparent"></path>
+
+        <!-- Drawing the circle with the express logo. -->
+        <circle cx="150" cy="140" r="45" fill="#272726"></circle>
+        <text x="111" y="147" font-family="Franklin Gothic Book" font-size="24" font-weight="normal" fill="#FFFFFF">express</text>
+
+        <!-- In the next lines we define the gradients that we need for the AngularJS logo. After that we draw the circle. -->
+        <circle cx="150" cy="192" r="45" fill="#E13336"></circle>
+
+        <defs>
+            <linearGradient id="LinearGradient_1">
+                <stop offset="50%" stop-color="rgba(225,51,54,1)"></stop>
+                <stop offset="50%" stop-color="rgba(181,48,49,1)"></stop>
+            </linearGradient>
+        </defs>
+
+        <defs>
+            <linearGradient id="LinearGradient_2">
+                <stop offset="50%" stop-color="rgba(225,255,255,1)"></stop>
+                <stop offset="50%" stop-color="rgba(178,178,178,1)"></stop>
+            </linearGradient>
+        </defs>
+
+        <polygon points="150 167, 175 177, 170 212, 150 224, 150 224, 130 212, 125 177" fill="url(#LinearGradient_1)" stroke="#ADBEBF" stroke-width="3"></polygon>
+        <text x="135" y="210" font-family="Letter Gothic Std" font-size="50" font-weight="bold" fill="url(#LinearGradient_2)">A</text>
+
+        <!-- Drawing the circle with the Node.js logo. -->
+        <circle cx="150" cy="237" r="45" fill="#8CC651"></circle>        
+        <image xlink:href="Images/nodejs_logo.png" x="114" y="198" width="72px" height="72px"></image>
+    </svg>
+</body>
+</html>
