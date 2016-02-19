@@ -1,0 +1,38 @@
+body, button, p, table, tbody, td, thead, tr {
+    font-family: Calibri;
+}
+
+button {
+    font-size: 14px;
+}
+
+table {
+    border: 1px solid;
+    border-color: #A7AEB5;
+    border-spacing: 1px;
+}
+
+tbody {
+    background-color: #F0F2F7;
+}
+
+td {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+tfoot {
+    background-color: #C5C9CE;
+}
+
+#FirstPartOfThead {
+    background-color: #E7E9EB;
+}
+
+#SecondPartOfThead {
+    background-color: #EBECEE;
+}
+
+#ThirdPartOfThead {
+    background-color: #DFE3E8;
+}
