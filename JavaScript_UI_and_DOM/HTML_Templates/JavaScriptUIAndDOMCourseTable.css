@@ -1,0 +1,36 @@
+body {
+    font: bold 16px Calibri;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #FFFFFF;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #D9D9D9;
+}
+
+thead {
+    background-color: #A6A6A6;
+}
+
+thead, tbody, tr, td {
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+th {
+    color: #FFFFFF;
+}
+
+.firstColumn, .thirdColumn, .fourthColumn {
+    text-align: center;
+}
