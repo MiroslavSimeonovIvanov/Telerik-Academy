@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>JavaScript UI and DOM course table</title>
+    <link href="Styles/JavaScriptUIAndDOMCourseTable.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="root"></div>
+    <script type="text/x-handlebars-template" id="course-template">
+        <table>
+            <thead>
+                <tr>
+                    <th class="firstColumn">№</th>
+                    <th>Title</th>
+                    <th class="thirdColumn">Date #1</th>
+                    <th class="fourthColumn">Date #2</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#lessons}}
+                    <tr>
+                        <td class="firstColumn">{{number}}</td>
+                        <td>{{title}}</td>
+                        <td class="thirdColumn">{{dateOne}}</td>
+                        <td class="fourthColumn">{{dateTwo}}</td>
+                    </tr>
+                {{/lessons}}
+            </tbody>
+        </table>
+    </script>
+    <script src="Libraries/handlebars-v4.0.5.js"></script>
+    <script src="Scripts/JavaScriptUIAndDOMCourseTable.js"></script>
+
+</body>
+</html>
