@@ -6,12 +6,12 @@ class IfStatements
     Potato potato;
 
     if (potato != null)
-	  {
-	      if (potato.IsPeeled && potato.IsNotRotten)
-	      {
+	{
+	    if (potato.IsPeeled && potato.IsNotRotten)
+	    {
             Cook(potato);
-	      }	 
-	  }
+	    }	 
+	}
 
     // The second if statement.
     bool xInRange = MIN_X <= x && x <= MAX_X;
