@@ -95,7 +95,8 @@ namespace Methods
             isHorizontal = (yOneCoordinate == yTwoCoordinate);
             isVertical = (xOneCoordinate == xTwoCoordinate);
 
-            double distance = Math.Sqrt((xTwoCoordinate - xOneCoordinate) * (xTwoCoordinate - xOneCoordinate) + (yTwoCoordinate - yOneCoordinate) * (yTwoCoordinate - yOneCoordinate));
+            double distance = Math.Sqrt((xTwoCoordinate - xOneCoordinate) * (xTwoCoordinate - xOneCoordinate) +
+                (yTwoCoordinate - yOneCoordinate) * (yTwoCoordinate - yOneCoordinate));
             return distance;
         }
 
