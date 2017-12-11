@@ -1,0 +1,422 @@
+USE [master]
+GO
+/****** Object:  Database [University]    Script Date: 11.12.2017 г. 16:50:01 ******/
+CREATE DATABASE [University]
+ CONTAINMENT = NONE
+ ON  PRIMARY 
+( NAME = N'University', FILENAME = N'C:\Program Files\Microsoft SQL Server\MSSQL14.SQLEXPRESS\MSSQL\DATA\University.mdf' , SIZE = 8192KB , MAXSIZE = UNLIMITED, FILEGROWTH = 65536KB )
+ LOG ON 
+( NAME = N'University_log', FILENAME = N'C:\Program Files\Microsoft SQL Server\MSSQL14.SQLEXPRESS\MSSQL\DATA\University_log.ldf' , SIZE = 8192KB , MAXSIZE = 2048GB , FILEGROWTH = 65536KB )
+GO
+ALTER DATABASE [University] SET COMPATIBILITY_LEVEL = 140
+GO
+IF (1 = FULLTEXTSERVICEPROPERTY('IsFullTextInstalled'))
+begin
+EXEC [University].[dbo].[sp_fulltext_database] @action = 'enable'
+end
+GO
+ALTER DATABASE [University] SET ANSI_NULL_DEFAULT OFF 
+GO
+ALTER DATABASE [University] SET ANSI_NULLS OFF 
+GO
+ALTER DATABASE [University] SET ANSI_PADDING OFF 
+GO
+ALTER DATABASE [University] SET ANSI_WARNINGS OFF 
+GO
+ALTER DATABASE [University] SET ARITHABORT OFF 
+GO
+ALTER DATABASE [University] SET AUTO_CLOSE OFF 
+GO
+ALTER DATABASE [University] SET AUTO_SHRINK OFF 
+GO
+ALTER DATABASE [University] SET AUTO_UPDATE_STATISTICS ON 
+GO
+ALTER DATABASE [University] SET CURSOR_CLOSE_ON_COMMIT OFF 
+GO
+ALTER DATABASE [University] SET CURSOR_DEFAULT  GLOBAL 
+GO
+ALTER DATABASE [University] SET CONCAT_NULL_YIELDS_NULL OFF 
+GO
+ALTER DATABASE [University] SET NUMERIC_ROUNDABORT OFF 
+GO
+ALTER DATABASE [University] SET QUOTED_IDENTIFIER OFF 
+GO
+ALTER DATABASE [University] SET RECURSIVE_TRIGGERS OFF 
+GO
+ALTER DATABASE [University] SET  DISABLE_BROKER 
+GO
+ALTER DATABASE [University] SET AUTO_UPDATE_STATISTICS_ASYNC OFF 
+GO
+ALTER DATABASE [University] SET DATE_CORRELATION_OPTIMIZATION OFF 
+GO
+ALTER DATABASE [University] SET TRUSTWORTHY OFF 
+GO
+ALTER DATABASE [University] SET ALLOW_SNAPSHOT_ISOLATION OFF 
+GO
+ALTER DATABASE [University] SET PARAMETERIZATION SIMPLE 
+GO
+ALTER DATABASE [University] SET READ_COMMITTED_SNAPSHOT OFF 
+GO
+ALTER DATABASE [University] SET HONOR_BROKER_PRIORITY OFF 
+GO
+ALTER DATABASE [University] SET RECOVERY SIMPLE 
+GO
+ALTER DATABASE [University] SET  MULTI_USER 
+GO
+ALTER DATABASE [University] SET PAGE_VERIFY CHECKSUM  
+GO
+ALTER DATABASE [University] SET DB_CHAINING OFF 
+GO
+ALTER DATABASE [University] SET FILESTREAM( NON_TRANSACTED_ACCESS = OFF ) 
+GO
+ALTER DATABASE [University] SET TARGET_RECOVERY_TIME = 60 SECONDS 
+GO
+ALTER DATABASE [University] SET DELAYED_DURABILITY = DISABLED 
+GO
+ALTER DATABASE [University] SET QUERY_STORE = OFF
+GO
+USE [University]
+GO
+ALTER DATABASE SCOPED CONFIGURATION SET IDENTITY_CACHE = ON;
+GO
+ALTER DATABASE SCOPED CONFIGURATION SET LEGACY_CARDINALITY_ESTIMATION = OFF;
+GO
+ALTER DATABASE SCOPED CONFIGURATION FOR SECONDARY SET LEGACY_CARDINALITY_ESTIMATION = PRIMARY;
+GO
+ALTER DATABASE SCOPED CONFIGURATION SET MAXDOP = 0;
+GO
+ALTER DATABASE SCOPED CONFIGURATION FOR SECONDARY SET MAXDOP = PRIMARY;
+GO
+ALTER DATABASE SCOPED CONFIGURATION SET PARAMETER_SNIFFING = ON;
+GO
+ALTER DATABASE SCOPED CONFIGURATION FOR SECONDARY SET PARAMETER_SNIFFING = PRIMARY;
+GO
+ALTER DATABASE SCOPED CONFIGURATION SET QUERY_OPTIMIZER_HOTFIXES = OFF;
+GO
+ALTER DATABASE SCOPED CONFIGURATION FOR SECONDARY SET QUERY_OPTIMIZER_HOTFIXES = PRIMARY;
+GO
+USE [University]
+GO
+/****** Object:  Table [dbo].[Auditoriums]    Script Date: 11.12.2017 г. 16:50:01 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Auditoriums](
+	[AuditoriumID] [int] IDENTITY(1,1) NOT NULL,
+	[AuditoriumNumber] [int] NOT NULL,
+	[FloorID] [int] NOT NULL,
+ CONSTRAINT [PK_Auditoriums] PRIMARY KEY CLUSTERED 
+(
+	[AuditoriumID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Buildings]    Script Date: 11.12.2017 г. 16:50:02 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Buildings](
+	[BuildingID] [int] IDENTITY(1,1) NOT NULL,
+	[BuildingNumber] [int] NOT NULL,
+ CONSTRAINT [PK_Buildings] PRIMARY KEY CLUSTERED 
+(
+	[BuildingID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Courses]    Script Date: 11.12.2017 г. 16:50:02 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Courses](
+	[CourseID] [int] IDENTITY(1,1) NOT NULL,
+	[CourseName] [nvarchar](50) NOT NULL,
+	[StudentID] [int] NOT NULL,
+	[ProfessorID] [int] NOT NULL,
+	[DepartmentID] [int] NOT NULL,
+ CONSTRAINT [PK_Courses] PRIMARY KEY CLUSTERED 
+(
+	[CourseID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Departments]    Script Date: 11.12.2017 г. 16:50:02 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Departments](
+	[DepartmentID] [int] IDENTITY(1,1) NOT NULL,
+	[DepartmentName] [nvarchar](50) NOT NULL,
+	[FacultyID] [int] NOT NULL,
+ CONSTRAINT [PK_Departments] PRIMARY KEY CLUSTERED 
+(
+	[DepartmentID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Faculties]    Script Date: 11.12.2017 г. 16:50:02 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Faculties](
+	[FacultyID] [int] IDENTITY(1,1) NOT NULL,
+	[FacultyName] [nvarchar](50) NOT NULL,
+ CONSTRAINT [PK_Faculties] PRIMARY KEY CLUSTERED 
+(
+	[FacultyID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Floors]    Script Date: 11.12.2017 г. 16:50:02 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Floors](
+	[FloorID] [int] IDENTITY(1,1) NOT NULL,
+	[FloorNumber] [int] NOT NULL,
+	[BuildingID] [int] NOT NULL,
+ CONSTRAINT [PK_Floors] PRIMARY KEY CLUSTERED 
+(
+	[FloorID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Groups]    Script Date: 11.12.2017 г. 16:50:02 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Groups](
+	[GroupID] [int] IDENTITY(1,1) NOT NULL,
+	[GroupNumber] [int] NOT NULL,
+	[SpecialtyID] [int] NOT NULL,
+ CONSTRAINT [PK_Groups] PRIMARY KEY CLUSTERED 
+(
+	[GroupID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Professors]    Script Date: 11.12.2017 г. 16:50:02 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Professors](
+	[ProfessorID] [int] IDENTITY(1,1) NOT NULL,
+	[ProfessorFirstName] [nvarchar](50) NOT NULL,
+	[ProfessorLastName] [nvarchar](50) NOT NULL,
+	[DepartmentID] [int] NOT NULL,
+ CONSTRAINT [PK_Professors] PRIMARY KEY CLUSTERED 
+(
+	[ProfessorID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[ProfessorTitles]    Script Date: 11.12.2017 г. 16:50:02 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[ProfessorTitles](
+	[ProfessorTitleID] [int] IDENTITY(1,1) NOT NULL,
+	[ProfessorTitle] [nvarchar](50) NOT NULL,
+	[ProfessorID] [int] NOT NULL,
+ CONSTRAINT [PK_ProfessorTitles] PRIMARY KEY CLUSTERED 
+(
+	[ProfessorTitleID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Specialties]    Script Date: 11.12.2017 г. 16:50:02 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Specialties](
+	[SpecialtyID] [int] IDENTITY(1,1) NOT NULL,
+	[SpecialtyName] [nvarchar](50) NOT NULL,
+	[DepartmentID] [int] NOT NULL,
+ CONSTRAINT [PK_Specialties] PRIMARY KEY CLUSTERED 
+(
+	[SpecialtyID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[StudentFacultyNumbers]    Script Date: 11.12.2017 г. 16:50:02 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[StudentFacultyNumbers](
+	[StudentFacultyNumberID] [int] IDENTITY(1,1) NOT NULL,
+	[StudentFacultyNumber] [int] NOT NULL,
+	[StudentID] [int] NOT NULL,
+ CONSTRAINT [PK_StudentFacultyNumbers] PRIMARY KEY CLUSTERED 
+(
+	[StudentFacultyNumberID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY],
+ CONSTRAINT [FK_StudentFacultyNumbers] UNIQUE NONCLUSTERED 
+(
+	[StudentID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[StudentMarks]    Script Date: 11.12.2017 г. 16:50:02 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[StudentMarks](
+	[StudentMarkID] [int] IDENTITY(1,1) NOT NULL,
+	[StudentMark] [int] NOT NULL,
+	[StudentID] [int] NOT NULL,
+ CONSTRAINT [PK_StudentMarks] PRIMARY KEY CLUSTERED 
+(
+	[StudentMarkID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Students]    Script Date: 11.12.2017 г. 16:50:02 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Students](
+	[StudentID] [int] IDENTITY(1,1) NOT NULL,
+	[StudentFirstName] [nvarchar](50) NOT NULL,
+	[StudentLastName] [nvarchar](50) NOT NULL,
+	[FacultyID] [int] NOT NULL,
+	[SpecialtyID] [int] NOT NULL,
+	[GroupID] [int] NOT NULL,
+	[CourseID] [int] NOT NULL,
+ CONSTRAINT [PK_Students] PRIMARY KEY CLUSTERED 
+(
+	[StudentID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[StudentSchedules]    Script Date: 11.12.2017 г. 16:50:02 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[StudentSchedules](
+	[StudentScheduleID] [int] IDENTITY(1,1) NOT NULL,
+	[StudentScheduleTable] [image] NULL,
+	[StudentID] [int] NOT NULL,
+ CONSTRAINT [PK_StudentSchedules] PRIMARY KEY CLUSTERED 
+(
+	[StudentScheduleID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[StudentStatuses]    Script Date: 11.12.2017 г. 16:50:02 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[StudentStatuses](
+	[StudentStatusID] [int] IDENTITY(1,1) NOT NULL,
+	[StudentStatusType] [nvarchar](50) NOT NULL,
+	[StudentID] [int] NOT NULL,
+ CONSTRAINT [PK_StudentStatuses] PRIMARY KEY CLUSTERED 
+(
+	[StudentStatusID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+ALTER TABLE [dbo].[Auditoriums]  WITH CHECK ADD  CONSTRAINT [FK_Auditoriums_Floors] FOREIGN KEY([FloorID])
+REFERENCES [dbo].[Floors] ([FloorID])
+GO
+ALTER TABLE [dbo].[Auditoriums] CHECK CONSTRAINT [FK_Auditoriums_Floors]
+GO
+ALTER TABLE [dbo].[Courses]  WITH CHECK ADD  CONSTRAINT [FK_Courses_Departments] FOREIGN KEY([DepartmentID])
+REFERENCES [dbo].[Departments] ([DepartmentID])
+GO
+ALTER TABLE [dbo].[Courses] CHECK CONSTRAINT [FK_Courses_Departments]
+GO
+ALTER TABLE [dbo].[Courses]  WITH CHECK ADD  CONSTRAINT [FK_Courses_Professors] FOREIGN KEY([ProfessorID])
+REFERENCES [dbo].[Professors] ([ProfessorID])
+GO
+ALTER TABLE [dbo].[Courses] CHECK CONSTRAINT [FK_Courses_Professors]
+GO
+ALTER TABLE [dbo].[Departments]  WITH CHECK ADD  CONSTRAINT [FK_Departments_Faculties] FOREIGN KEY([FacultyID])
+REFERENCES [dbo].[Faculties] ([FacultyID])
+GO
+ALTER TABLE [dbo].[Departments] CHECK CONSTRAINT [FK_Departments_Faculties]
+GO
+ALTER TABLE [dbo].[Floors]  WITH CHECK ADD  CONSTRAINT [FK_Floors_Buildings] FOREIGN KEY([BuildingID])
+REFERENCES [dbo].[Buildings] ([BuildingID])
+GO
+ALTER TABLE [dbo].[Floors] CHECK CONSTRAINT [FK_Floors_Buildings]
+GO
+ALTER TABLE [dbo].[Groups]  WITH CHECK ADD  CONSTRAINT [FK_Groups_Specialties] FOREIGN KEY([SpecialtyID])
+REFERENCES [dbo].[Specialties] ([SpecialtyID])
+GO
+ALTER TABLE [dbo].[Groups] CHECK CONSTRAINT [FK_Groups_Specialties]
+GO
+ALTER TABLE [dbo].[Professors]  WITH CHECK ADD  CONSTRAINT [FK_Professors_Departments] FOREIGN KEY([DepartmentID])
+REFERENCES [dbo].[Departments] ([DepartmentID])
+GO
+ALTER TABLE [dbo].[Professors] CHECK CONSTRAINT [FK_Professors_Departments]
+GO
+ALTER TABLE [dbo].[ProfessorTitles]  WITH CHECK ADD  CONSTRAINT [FK_ProfessorTitles_Professors] FOREIGN KEY([ProfessorID])
+REFERENCES [dbo].[Professors] ([ProfessorID])
+GO
+ALTER TABLE [dbo].[ProfessorTitles] CHECK CONSTRAINT [FK_ProfessorTitles_Professors]
+GO
+ALTER TABLE [dbo].[Specialties]  WITH CHECK ADD  CONSTRAINT [FK_Specialties_Departments] FOREIGN KEY([DepartmentID])
+REFERENCES [dbo].[Departments] ([DepartmentID])
+GO
+ALTER TABLE [dbo].[Specialties] CHECK CONSTRAINT [FK_Specialties_Departments]
+GO
+ALTER TABLE [dbo].[StudentFacultyNumbers]  WITH CHECK ADD  CONSTRAINT [FK_StudentFacultyNumbers_Students] FOREIGN KEY([StudentID])
+REFERENCES [dbo].[Students] ([StudentID])
+GO
+ALTER TABLE [dbo].[StudentFacultyNumbers] CHECK CONSTRAINT [FK_StudentFacultyNumbers_Students]
+GO
+ALTER TABLE [dbo].[StudentMarks]  WITH CHECK ADD  CONSTRAINT [FK_StudentMarks_Students] FOREIGN KEY([StudentID])
+REFERENCES [dbo].[Students] ([StudentID])
+GO
+ALTER TABLE [dbo].[StudentMarks] CHECK CONSTRAINT [FK_StudentMarks_Students]
+GO
+ALTER TABLE [dbo].[Students]  WITH CHECK ADD  CONSTRAINT [FK_Students_Courses] FOREIGN KEY([CourseID])
+REFERENCES [dbo].[Courses] ([CourseID])
+GO
+ALTER TABLE [dbo].[Students] CHECK CONSTRAINT [FK_Students_Courses]
+GO
+ALTER TABLE [dbo].[Students]  WITH CHECK ADD  CONSTRAINT [FK_Students_Faculties] FOREIGN KEY([FacultyID])
+REFERENCES [dbo].[Faculties] ([FacultyID])
+GO
+ALTER TABLE [dbo].[Students] CHECK CONSTRAINT [FK_Students_Faculties]
+GO
+ALTER TABLE [dbo].[Students]  WITH CHECK ADD  CONSTRAINT [FK_Students_Groups] FOREIGN KEY([GroupID])
+REFERENCES [dbo].[Groups] ([GroupID])
+GO
+ALTER TABLE [dbo].[Students] CHECK CONSTRAINT [FK_Students_Groups]
+GO
+ALTER TABLE [dbo].[Students]  WITH CHECK ADD  CONSTRAINT [FK_Students_Specialties] FOREIGN KEY([SpecialtyID])
+REFERENCES [dbo].[Specialties] ([SpecialtyID])
+GO
+ALTER TABLE [dbo].[Students] CHECK CONSTRAINT [FK_Students_Specialties]
+GO
+ALTER TABLE [dbo].[StudentSchedules]  WITH CHECK ADD  CONSTRAINT [FK_StudentSchedules_Students] FOREIGN KEY([StudentID])
+REFERENCES [dbo].[Students] ([StudentID])
+GO
+ALTER TABLE [dbo].[StudentSchedules] CHECK CONSTRAINT [FK_StudentSchedules_Students]
+GO
+ALTER TABLE [dbo].[StudentStatuses]  WITH CHECK ADD  CONSTRAINT [FK_StudentStatuses_Students] FOREIGN KEY([StudentID])
+REFERENCES [dbo].[Students] ([StudentID])
+GO
+ALTER TABLE [dbo].[StudentStatuses] CHECK CONSTRAINT [FK_StudentStatuses_Students]
+GO
+USE [master]
+GO
+ALTER DATABASE [University] SET  READ_WRITE 
+GO
