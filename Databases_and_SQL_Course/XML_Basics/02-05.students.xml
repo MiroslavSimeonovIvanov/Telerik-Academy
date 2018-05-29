@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="students-xml2html.xsl"?>
+<students xmlns="urn:students">
+  <student>
+    <name>Qui-Gon Jinn</name>
+    <sex>Male</sex>
+    <birthdate>07.06.1952</birthdate>
+    <phone>0781456738105</phone>
+    <email>jinn@gmail.com</email>
+    <course>End-to-End JavaScript Applications</course>
+    <specialty>JavaScript developer</specialty>
+    <facultynumber>978-0-7864-7181-2</facultynumber>
+    <exams>
+      <exam>
+        <name>JavaScript Fundamentals</name>
+        <tutor>Doncho Minkov</tutor>
+        <score>500</score>
+      </exam>
+    </exams>
+  </student>
+
+  <student>
+    <name>Obi-Wan Kenobi</name>
+    <sex>Male</sex>
+    <birthdate>31.03.1971</birthdate>
+    <phone>0879517042</phone>
+    <email>kenobi@gmail.com</email>
+    <course>JavaScript UI and DOM</course>
+    <specialty>JavaScript developer</specialty>
+    <facultynumber>1-56025-239-1</facultynumber>
+    <exams>
+      <exam>
+        <name>JavaScript Fundamentals</name>
+        <tutor>Doncho Minkov</tutor>
+        <score>500</score>
+      </exam>
+    </exams>
+  </student>
+
+  <student>
+    <name>Anakin Skywalker</name>
+    <sex>Male</sex>
+    <birthdate>01.07.1935</birthdate>
+    <phone>0595347322</phone>
+    <email>skywalker@gmail.com</email>
+    <course>Data structures and algorithms</course>
+    <specialty>C# developer</specialty>
+    <facultynumber>0-345-42882-X</facultynumber>
+    <exams>
+      <exam>
+        <name>OOP</name>
+        <tutor>Ivaylo Kenov</tutor>
+        <score>600</score>
+      </exam>
+    </exams>
+  </student>
+</students>
