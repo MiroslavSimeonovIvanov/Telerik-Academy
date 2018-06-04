@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalogue>
+  <album>
+    <name>Graduation</name>
+    <artist>Kanye West</artist>
+    <year>2007</year>
+    <producer>The Carter Administration</producer>
+    <price>6.99</price>
+    <songs>
+      <song>
+        <title>Good Morning</title>
+        <duration>3:15</duration>
+      </song>
+      <song>
+        <title>Champion</title>
+        <duration>2:47</duration>
+      </song>
+      <song>
+        <title>Stronger</title>
+        <duration>5:12</duration>
+      </song>
+      <song>
+        <title>I Wonder</title>
+        <duration>4:03</duration>
+      </song>
+      <song>
+        <title>Good Life</title>
+        <duration>3:27</duration>
+      </song>
+      <song>
+        <title>Can't Tell Me Nothing</title>
+        <duration>4:31</duration>
+      </song>
+      <song>
+        <title>Barry Bonds</title>
+        <duration>3:24</duration>
+      </song>
+      <song>
+        <title>Drunk and Hot Girls</title>
+        <duration>5:13</duration>
+      </song>
+      <song>
+        <title>Flashing Lights</title>
+        <duration>3:57</duration>
+      </song>
+      <song>
+        <title>Everything I Am</title>
+        <duration>3:47</duration>
+      </song>
+      <song>
+        <title>The Glory</title>
+        <duration>3:32</duration>
+      </song>
+      <song>
+        <title>Homecoming</title>
+        <duration>3:23</duration>
+      </song>
+      <song>
+        <title>Big Brother</title>
+        <duration>4:47</duration>
+      </song>
+    </songs>
+  </album>
+
+  <album>
+    <name>The Massacre</name>
+    <artist>50 Cent</artist>
+    <year>2005</year>
+    <producer>50 Cent</producer>
+    <price>29.88</price>
+    <songs>
+      <song>
+        <title>Intro</title>
+        <duration>0:41</duration>
+      </song>
+      <song>
+        <title>In My Hood</title>
+        <duration>3:51</duration>
+      </song>
+      <song>
+        <title>This Is 50</title>
+        <duration>3:04</duration>
+      </song>
+      <song>
+        <title>I'm Supposed to Die Tonight</title>
+        <duration>3:51</duration>
+      </song>
+      <song>
+        <title>Piggy Bank</title>
+        <duration>4:15</duration>
+      </song>
+      <song>
+        <title>Gatman and Robbin</title>
+        <duration>3:46</duration>
+      </song>
+      <song>
+        <title>Candy Shop</title>
+        <duration>3:29</duration>
+      </song>
+      <song>
+        <title>Outta Control</title>
+        <duration>3:21</duration>
+      </song>
+      <song>
+        <title>Get in My Car</title>
+        <duration>4:05</duration>
+      </song>
+      <song>
+        <title>Ski Mask Way</title>
+        <duration>3:05</duration>
+      </song>
+      <song>
+        <title>A Baltimore Love Thing</title>
+        <duration>4:17</duration>
+      </song>
+      <song>
+        <title>Ryder Music</title>
+        <duration>3:51</duration>
+      </song>
+      <song>
+        <title>Disco Inferno</title>
+        <duration>3:34</duration>
+      </song>
+      <song>
+        <title>Just a Lil Bit</title>
+        <duration>3:57</duration>
+      </song>
+      <song>
+        <title>Gunz Come Out</title>
+        <duration>4:24</duration>
+      </song>
+      <song>
+        <title>My Toy Soldier</title>
+        <duration>3:44</duration>
+      </song>
+      <song>
+        <title>Position of Power</title>
+        <duration>3:12</duration>
+      </song>
+      <song>
+        <title>Build You Up</title>
+        <duration>2:55</duration>
+      </song>
+      <song>
+        <title>God Gave Me Style</title>
+        <duration>3:01</duration>
+      </song>
+      <song>
+        <title>So Amazing</title>
+        <duration>3:16</duration>
+      </song>
+      <song>
+        <title>I Don't Need 'Em</title>
+        <duration>3:20</duration>
+      </song>
+      <song>
+        <title>Hate It or Love It (G-Unit Remix)</title>
+        <duration>4:23</duration>
+      </song>
+    </songs>
+  </album>
+
+  <album>
+    <name>Recovery</name>
+    <artist>Eminem</artist>
+    <year>2010</year>
+    <producer>Eminem</producer>
+    <price>7.69</price>
+    <songs>
+      <song>
+        <title>Cold Wind Blows</title>
+        <duration>5:03</duration>
+      </song>
+      <song>
+        <title>Talkin' 2 Myself</title>
+        <duration>5:00</duration>
+      </song>
+      <song>
+        <title>On Fire</title>
+        <duration>3:33</duration>
+      </song>
+      <song>
+        <title>Won't Back Down</title>
+        <duration>4:25</duration>
+      </song>
+      <song>
+        <title>W.T.P.</title>
+        <duration>3:58</duration>
+      </song>
+      <song>
+        <title>Going Through Changes</title>
+        <duration>4:58</duration>
+      </song>
+      <song>
+        <title>Not Afraid</title>
+        <duration>4:10</duration>
+      </song>
+      <song>
+        <title>Seduction</title>
+        <duration>4:35</duration>
+      </song>
+      <song>
+        <title>No Love</title>
+        <duration>5:00</duration>
+      </song>
+      <song>
+        <title>Space Bound</title>
+        <duration>4:38</duration>
+      </song>
+      <song>
+        <title>Cinderella Man</title>
+        <duration>4:39</duration>
+      </song>
+      <song>
+        <title>25 to Life</title>
+        <duration>4:01</duration>
+      </song>
+      <song>
+        <title>So Bad</title>
+        <duration>5:25</duration>
+      </song>
+      <song>
+        <title>Almost Famous</title>
+        <duration>4:52</duration>
+      </song>
+      <song>
+        <title>Love the Way You Lie</title>
+        <duration>4:23</duration>
+      </song>
+      <song>
+        <title>You're Never Over</title>
+        <duration>5:05</duration>
+      </song>
+      <song>
+        <title>Untitled</title>
+        <duration>3:14</duration>
+      </song>
+    </songs>
+  </album>
+
+  <album>
+    <name>R&amp;G (Rhythm &amp; Gangsta): The Masterpiece</name>
+    <artist>Snoop Dogg</artist>
+    <year>2004</year>
+    <producer>Warryn Campbell</producer>
+    <price>8.99</price>
+    <songs>
+      <song>
+        <title>(Intro) I Love to Give You Light</title>
+        <duration>2:38</duration>
+      </song>
+      <song>
+        <title>Bang Out</title>
+        <duration>3:05</duration>
+      </song>
+      <song>
+        <title>Drop It Like It's Hot</title>
+        <duration>4:26</duration>
+      </song>
+      <song>
+        <title>Can I Get a Flicc Witchu</title>
+        <duration>5:24</duration>
+      </song>
+      <song>
+        <title>Ups &amp; Downs</title>
+        <duration>4:04</duration>
+      </song>
+      <song>
+        <title>The Bidness</title>
+        <duration>3:28</duration>
+      </song>
+      <song>
+        <title>Snoop D.O. Double G</title>
+        <duration>4:01</duration>
+      </song>
+      <song>
+        <title>Let's Get Blown</title>
+        <duration>4:41</duration>
+      </song>
+      <song>
+        <title>Step Yo Game Up</title>
+        <duration>4:24</duration>
+      </song>
+      <song>
+        <title>Perfect</title>
+        <duration>5:51</duration>
+      </song>
+      <song>
+        <title>WBALLZ (Interlude)</title>
+        <duration>0:21</duration>
+      </song>
+      <song>
+        <title>Fresh Pair of Panties On</title>
+        <duration>2:31</duration>
+      </song>
+      <song>
+        <title>Promise I</title>
+        <duration>3:17</duration>
+      </song>
+      <song>
+        <title>Oh No</title>
+        <duration>4:03</duration>
+      </song>
+      <song>
+        <title>Can U Control Yo Hoe</title>
+        <duration>3:08</duration>
+      </song>
+      <song>
+        <title>Signs</title>
+        <duration>3:56</duration>
+      </song>
+      <song>
+        <title>I'm Threw Witchu</title>
+        <duration>4:21</duration>
+      </song>
+      <song>
+        <title>Pass It Pass It</title>
+        <duration>4:23</duration>
+      </song>
+      <song>
+        <title>Girl Like U</title>
+        <duration>4:36</duration>
+      </song>
+      <song>
+        <title>No Thang on Me</title>
+        <duration>4:41</duration>
+      </song>
+    </songs>
+  </album>
+
+  <album>
+    <name>Tha Carter III</name>
+    <artist>Lil Wayne</artist>
+    <year>2008</year>
+    <producer>Birdman</producer>
+    <price>8.99</price>
+    <songs>
+      <song>
+        <title>3 Peat</title>
+        <duration>3:19</duration>
+      </song>
+      <song>
+        <title>Mr. Carter</title>
+        <duration>5:16</duration>
+      </song>
+      <song>
+        <title>A Milli</title>
+        <duration>3:41</duration>
+      </song>
+      <song>
+        <title>Got Money</title>
+        <duration>4:04</duration>
+      </song>
+      <song>
+        <title>Comfortable</title>
+        <duration>4:25</duration>
+      </song>
+      <song>
+        <title>Dr. Carter</title>
+        <duration>4:24</duration>
+      </song>
+      <song>
+        <title>Phone Home</title>
+        <duration>3:11</duration>
+      </song>
+      <song>
+        <title>Tie My Hands</title>
+        <duration>5:19</duration>
+      </song>
+      <song>
+        <title>Mrs. Officer</title>
+        <duration>4:47</duration>
+      </song>
+      <song>
+        <title>Let the Beat Build</title>
+        <duration>5:09</duration>
+      </song>
+      <song>
+        <title>Shoot Me Down</title>
+        <duration>4:29</duration>
+      </song>
+      <song>
+        <title>Lollipop</title>
+        <duration>4:59</duration>
+      </song>
+      <song>
+        <title>La La</title>
+        <duration>4:21</duration>
+      </song>
+      <song>
+        <title>Playing with Fire</title>
+        <duration>4:21</duration>
+      </song>
+      <song>
+        <title>You Ain't Got Nuthin</title>
+        <duration>5:27</duration>
+      </song>
+      <song>
+        <title>Dontgetit</title>
+        <duration>9:52</duration>
+      </song>
+    </songs>
+  </album>
+
+  <album>
+    <name>Weapons of Mass Destruction</name>
+    <artist>Xzibit</artist>
+    <year>2004</year>
+    <producer>DJ Khalil</producer>
+    <price>9.99</price>
+    <songs>
+      <song>
+        <title>State of the Union</title>
+        <duration>1:30</duration>
+      </song>
+      <song>
+        <title>L.A.X.</title>
+        <duration>3:44</duration>
+      </song>
+      <song>
+        <title>Cold World</title>
+        <duration>3:52</duration>
+      </song>
+      <song>
+        <title>Saturday Night Live</title>
+        <duration>4:19</duration>
+      </song>
+      <song>
+        <title>Muthafucka</title>
+        <duration>2:56</duration>
+      </song>
+      <song>
+        <title>Beware of Us</title>
+        <duration>4:10</duration>
+      </song>
+      <song>
+        <title>Judgement Day</title>
+        <duration>3:23</duration>
+      </song>
+      <song>
+        <title>Criminal Set</title>
+        <duration>3:17</duration>
+      </song>
+      <song>
+        <title>Hey Now (Mean Muggin)</title>
+        <duration>4:21</duration>
+      </song>
+      <song>
+        <title>Ride or Die</title>
+        <duration>4:00</duration>
+      </song>
+      <song>
+        <title>Crazy Ho</title>
+        <duration>4:25</duration>
+      </song>
+      <song>
+        <title>Big Barking</title>
+        <duration>0:53</duration>
+      </song>
+      <song>
+        <title>Tough Guy</title>
+        <duration>4:25</duration>
+      </song>
+      <song>
+        <title>Scent of a Woman</title>
+        <duration>4:20</duration>
+      </song>
+      <song>
+        <title>Klack</title>
+        <duration>5:14</duration>
+      </song>
+      <song>
+        <title>Back 2 the Way It Was</title>
+        <duration>3:58</duration>
+      </song>
+    </songs>
+  </album>
+</catalogue>
