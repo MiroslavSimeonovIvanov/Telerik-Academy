@@ -1,4 +1,4 @@
-TelerikAcademy
+Telerik Academy
 ==============
 
-My vision, solutions and code to the problems
+My vision, solutions and code to the problems.
